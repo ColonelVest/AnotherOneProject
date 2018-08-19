@@ -18,7 +18,7 @@ class FakeApiClient
     public function makeRequests()
     {
         $constHttpParam = [
-            RequestOptions::THRESHOLD_CONST_PARAM => 5,
+            RequestOptions::THRESHOLD => 5,
             RequestOptions::TIMEOUT_IN_SECONDS => 60
         ];
         $serializer = new Serializer();

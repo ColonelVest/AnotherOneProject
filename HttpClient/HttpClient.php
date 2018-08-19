@@ -168,8 +168,8 @@ class HttpClient
     protected function logRequestIfExceedThreshold(Request $request, Response $response)
     {
         if ($this->logger instanceof LoggerInterface
-            && isset($this->options[RequestOptions::THRESHOLD_CONST_PARAM])
-            && $response->getRequestTime() > $this->options[RequestOptions::THRESHOLD_CONST_PARAM]
+            && isset($this->options[RequestOptions::THRESHOLD])
+            && $response->getRequestTime() > $this->options[RequestOptions::THRESHOLD]
         ) {
             $warningMessage = 'Too long('
                 . $response->getRequestTime()

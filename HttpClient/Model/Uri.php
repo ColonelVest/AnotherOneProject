@@ -39,8 +39,8 @@ class Uri
             . $this->host
             . ':'
             . $this->port
-            . $this->relativePath
-            . '?token=angry|$2y$13$EeQiMObDq5sPdU7Fn9P14ebjOC5LPFyiOQ9BK06opkFVMrsrZzhNu';
+            . $this->relativePath;
+
         return $url;
     }
 }
