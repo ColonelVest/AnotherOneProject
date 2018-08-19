@@ -1,0 +1,13 @@
+{
+  "autoload": {
+    "psr-4": {
+      "FakeApiClient\\": "FakeApiClient",
+      "HttpClient\\": "HttpClient"
+    }
+  },
+  "require-dev": {
+  },
+  "require": {
+    "monolog/monolog": "^1.23"
+  }
+}
